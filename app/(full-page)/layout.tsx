@@ -7,7 +7,7 @@ interface SimpleLayoutProps {
 }
 
 export const metadata: Metadata = {
-    title: 'Welcome to SSIM Manager!',
+    title: 'SSIM Manager!',
     description: 'This is an application to upload SSIM files.'
 };
 

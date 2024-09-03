@@ -6,7 +6,7 @@ interface AppLayoutProps {
 }
 
 export const metadata: Metadata = {
-    title: 'Welcome to SSIM Manager!',
+    title: 'SSIM Manager!',
     description: 'This is an application to upload SSIM files.',
     robots: { index: false, follow: false },
     viewport: { initialScale: 1, width: 'device-width' },
@@ -18,9 +18,11 @@ export const metadata: Metadata = {
         images: ['#'],
         ttl: 604800
     },
+    /*
     icons: {
         icon: '/favicon.ico'
     }
+    */
 };
 
 export default function AppLayout({ children }: AppLayoutProps) {
