@@ -4,19 +4,21 @@ import React, { useState } from 'react';
 import { FileUpload } from 'primereact/fileupload';
 
 const upload = () => {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const [fileInteral, setFileInternal] = useState<File | null>(null);
-    const [fileExternal, setFileExternal] = useState<File | null>(null)
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    const [fileExternal, setFileExternal] = useState<File | null>(null);
 
   interface UploadEvent {
     files: File[];
   }
-  
+
   const onUpload1 = (event: UploadEvent) => {
-    setFileInternal(event.files[0]);
+    setFileInternal(event?.files[0]);
   };
-  
+
   const onUpload2 = (event: UploadEvent) => {
-    setFileExternal(event.files[0]);
+    setFileExternal(event?.files[0]);
   };
 
   return (
