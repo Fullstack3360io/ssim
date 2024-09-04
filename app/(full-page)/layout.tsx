@@ -7,8 +7,8 @@ interface SimpleLayoutProps {
 }
 
 export const metadata: Metadata = {
-    title: 'SSIM Manager!',
-    description: 'This is an application to upload SSIM files.'
+    title: process.env.APP_NAME,
+    description: process.env.APP_DESCRIPTION
 };
 
 export default function SimpleLayout({ children }: SimpleLayoutProps) {

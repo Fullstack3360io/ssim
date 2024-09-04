@@ -6,18 +6,18 @@ interface AppLayoutProps {
 }
 
 export const metadata: Metadata = {
-    title: 'SSIM Manager!',
-    description: 'This is an application to upload SSIM files.',
+    title: process.env.APP_NAME,
+    description: process.env.APP_DESCRIPTION,
     robots: { index: false, follow: false },
     viewport: { initialScale: 1, width: 'device-width' },
     openGraph: {
         type: 'website',
-        title: 'SSIM Manager',
+        title: process.env.APP_NAME,
+        description: process.env.APP_DESCRIPTION,
         url: '#',
-        description: 'This is an application to upload SSIM files.',
         images: ['#'],
         ttl: 604800
-    },
+    }
     /*
     icons: {
         icon: '/favicon.ico'
